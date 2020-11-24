@@ -23,14 +23,17 @@ body {
 
 a,
 a:visited {
-  color: #252934;
+  color: #f300b4;;
   font-size: 1.4rem;
   text-decoration: none;
   -webkit-transition: 200ms;
   transition: 200ms;
 }
 
-a:hover,
+
+
+
+a:hover, 
 a:active {
   color: #f300b4;
 }
@@ -878,6 +881,7 @@ a:active {
 #about .desc.full {
   grid-column-end: span 4;
   margin-bottom: 2rem;
+  .link { color: #f300b4; }
 }
 
 #about .desc {
@@ -885,6 +889,7 @@ a:active {
   background: #ffffffaa;
   padding: 2rem;
   text-align: justify;
+  .link { color: #f300b4; }
 }
 
 @media only screen and (max-width: 1149px) {
@@ -894,6 +899,7 @@ a:active {
   }
   #about .desc.full {
     grid-column-end: -1;
+	.link { color: #f300b4; }
   }
 
   #about .desc {

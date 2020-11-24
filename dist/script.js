@@ -50,7 +50,7 @@ const Nav = props => {
     React.createElement("div", { className: "nav-wrapper" },
     React.createElement("p", { className: "brand" }, "made in ",
 
-    React.createElement("strong", null, "IMH Elgoibar")),
+    React.createElement("strong", null, "IMH Elgoibar DIGITAL MANUFACTURING")),
 
     React.createElement("a", {
       onClick: props.toggleMenu,
@@ -86,6 +86,7 @@ const Header = props => {
 
     React.createElement("div", { className: "buttons" },
     React.createElement("a", { href: "#projects" }, "Robot"),
+	//React.createElement("a", { href: "#projects" }, "dashboard CO2"),
     React.createElement("a", { href: "https://www.youtube.com/watch?v=IkACVASViqY", className: "cta" }, "Video presentación")))));
 
 
@@ -128,19 +129,20 @@ const About = props => {
 
     React.createElement("div", { className: "desc" },
     React.createElement("h4", { className: "subtitle" }, "Telepresencia en clase."),
-    React.createElement("p", null, "El robot de telepresencia ayuda a que los alumnos enfermos o aislados puedan seguir interactuando con sus compañeros."),
-
-
-
-
-    React.createElement("p", null, "Permite ver y escuchar las clases, levantar la mano, hablar y mover y girar el robot de telepresencia.")),
+    React.createElement("p", null, "El robot de telepresencia ayuda a que los ",
+	React.createElement("u", null, "alumnos enfermos o aislados puedan seguir"), 
+	' ',
+    React.createElement("a",  { href: "https://tactizity.tylextech.com", target: "_blank", rel: "noopener noreferrer" }, "desde aquí"), " interactuando con sus compañeros. Permite ver y escuchar las clases, levantar la mano, hablar y mover y girar el robot de telepresencia.")),
 
 
 
 
     React.createElement("div", { className: "desc" },
     React.createElement("h4", { className: "subtitle" }, "Calidad del aire en clase."),
-    React.createElement("p", null, "Como sabemos, para evitar el Covid-19 en el aula, es esecial la buena ventilación. No podemos detectar el virus en el aire, pero podemos medir el nivel de CO2 para saber cuando debemos ventilar. Esto es especialmente útil para los lugares muy fríos en los que no es posible tener las ventanas siempre abiertas."),
+    React.createElement("p", null, "Para prevenir el Covid-19 en el aula, es esecial la buena ventilación. No podemos detectar el virus en el aire, pero podemos medir el ",
+    React.createElement("u", null, "nivel de CO2"), 
+	' ',	
+	React.createElement("a", { href: "https://j6q00k.stackhero-network.com/dashboard", target: "_blank", rel: "noopener noreferrer", }, "con este Dashboard"), " para saber cuando debemos ventilar. Esto es especialmente útil para los lugares muy fríos en los que no es posible tener las ventanas abiertas todo el tiempo."),
 
 
 
@@ -192,10 +194,10 @@ const Project = props => {
 
     props.children,
     React.createElement("div", { className: "buttons" },
-    React.createElement("a", { href: repo, target: "_blank", rel: "noopener noreferrer" }, "View source ",
+    React.createElement("a", { href: repo, target: "_blank", rel: "noopener noreferrer" }, "Código fuente ",
     React.createElement("i", { className: "fas fa-external-link-alt" })),
 
-    React.createElement("a", { href: link, target: "_blank", rel: "noopener noreferrer" }, "Try it Live ",
+    React.createElement("a", { href: link, target: "_blank", rel: "noopener noreferrer" }, "Pruébalo ",
     React.createElement("i", { className: "fas fa-external-link-alt" }))))));
 
 
@@ -243,19 +245,30 @@ const Projects = props => {
 
 
     React.createElement(Project, {
+      title: "Visualización del robot en Realidad Aumentada.",
+      img: '../dist/Marcador.png',
+      tech: "",
+      link: "https://github.com/iarakis/Telepresencia/blob/main/Marcador.png",
+      repo: "https://skfb.ly/6WwpO" },
+
+
+    React.createElement("small", null, "Realizado con AR.js."),
+    React.createElement("p", null, "Escanea el código QR, y tras abrir la URL, dirige la cámara al logo de IMH.")),
+
+  
+
+    React.createElement(Project, {
       title: "Nivel de CO2 en clase.",
       img: '../dist/co2.jpg',
       tech: "",
       link: "https://www.tactizity.com/" },
 
 
-    React.createElement("small", null, "Built using VueJS, Axios and CSS."),
-    React.createElement("p", null, "App that present the users with the current local weather for their location.")),
+    React.createElement("small", null, "Prevención del Covid-19 en clase."),
+    React.createElement("p", null, "Visualización del nivel de CO2 en clase, temperatura y humedad para la toma de decisión de ventilar.")),
 
   
-
-
-
+  
 
     React.createElement(Project, {
       title: "Meteorología",
@@ -352,7 +365,7 @@ const SocialLinks = props => {
 
     React.createElement("a", {
       id: "profile-link",
-      href: "https://github.com/iarakis",
+      href: "https://github.com/iarakis/Telepresencia",
       target: "_blank",
       rel: "noopener noreferrer",
       title: "Link to author's GitHub Profile" },
