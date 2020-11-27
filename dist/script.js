@@ -17,12 +17,15 @@ const Menu = props => {
 
 
     React.createElement("li", null,
-    React.createElement("a", { href: "#about", onClick: props.toggleMenu }, "SOBRE")),
+    React.createElement("a", { href: "#about", onClick: props.toggleMenu }, "QUÉ ES")),
 
 
 
     React.createElement("li", null,
-    React.createElement("a", { href: "#projects", onClick: props.toggleMenu }, "PROYECTO")),
+    React.createElement("a", { href: "#projects", onClick: props.toggleMenu }, "CÓDIGO OPEN")),
+	
+	React.createElement("li", null,
+    React.createElement("a", { href: "https://j6q00k.stackhero-network.com/dashboard", onClick: props.toggleMenu }, "DASHBOARD")),
 
 
 
@@ -85,9 +88,9 @@ const Header = props => {
 
 
     React.createElement("div", { className: "buttons" },
-    React.createElement("a", { href: "#projects" }, "Robot"),
+    React.createElement("a", { href: "#about" }, "Robot"),
 	//React.createElement("a", { href: "#projects" }, "dashboard CO2"),
-    React.createElement("a", { href: "https://www.youtube.com/watch?v=IkACVASViqY", className: "cta" }, "Video presentación")))));
+    React.createElement("a", { href: "https://www.youtube.com/watch?v=rS8wiphLviM&feature=youtu.be", className: "cta" }, "Video presentación")))));
 
 
 
@@ -232,10 +235,10 @@ const Projects = props => {
     React.createElement("div", { className: "projects-wrapper" },
     React.createElement(Project, {
       title: "Diseño del Robot de Telepresencia.",
-      img: '../dist/AnonMsgBoard.jpg',
+      img: '../dist/AnonMsgBoard.png',
       tech: "",
       link: "https://tactizity.tylextech.com/",
-      repo: "https://www.tactizity.com/" },
+      repo: "https://github.com/iarakis/Telepresencia" },
 
     React.createElement("small", null, "Sistemas embebidos."),
 
@@ -256,7 +259,7 @@ const Projects = props => {
     React.createElement("p", null, "Escanea el código QR, y tras abrir la URL, dirige la cámara al logo de IMH.")),
 
   
-
+/*
     React.createElement(Project, {
       title: "Nivel de CO2 en clase.",
       img: '../dist/co2.jpg',
@@ -268,17 +271,17 @@ const Projects = props => {
     React.createElement("p", null, "Visualización del nivel de CO2 en clase, temperatura y humedad para la toma de decisión de ventilar.")),
 
   
-  
+  */
 
     React.createElement(Project, {
-      title: "Meteorología",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/WeatherApp.jpg',
+      title: "Nivel de CO2 en clase.",
+      img: '../dist/co2.png',
       tech: "",
-      link: "https://codepen.io/yagoestevez/full/zWbGmZ/",
-      repo: "https://github.com/yagoestevez/documentify" },
+      link: "https://j6q00k.stackhero-network.com/dashboard/#!/0?socketid=UJaIC69hNUXXn3Y8AAA3",
+      repo: "https://github.com/iarakis/Telepresencia" },
 
-    React.createElement("small", null, "Built using VueJS, Axios and CSS."),
-    React.createElement("p", null, "App that present the users with the current local weather for their location."))))));
+    React.createElement("small", null, "Prevención del Covid-19 en clase."),
+    React.createElement("p", null, "Visualización del nivel de CO2 en clase, temperatura y humedad para la toma de decisión de ventilar."))))));
 
 
 
